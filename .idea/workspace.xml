@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75039a52-05dc-4b84-b749-f297ab50d2e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/bcpkix-jdk15on-161.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/bcprov-jdk15on-161.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/certtest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/certtest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/workday/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/workday/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574379339229</updated>
-      <workItem from="1574379340660" duration="2080000" />
+      <workItem from="1574379340660" duration="2837000" />
     </task>
     <servers />
   </component>

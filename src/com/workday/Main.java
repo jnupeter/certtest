@@ -4,6 +4,7 @@ import org.bouncycastle.asn1.x500.X500Name;
 import org.bouncycastle.cert.X509v3CertificateBuilder;
 import org.bouncycastle.cert.jcajce.JcaX509CertificateConverter;
 import org.bouncycastle.cert.jcajce.JcaX509v3CertificateBuilder;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.bouncycastle.operator.OperatorCreationException;
 import org.bouncycastle.operator.jcajce.JcaContentSignerBuilder;
 
@@ -16,6 +17,7 @@ import java.security.KeyPairGenerator;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
+import java.security.Security;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.security.spec.RSAKeyGenParameterSpec;
@@ -38,6 +40,7 @@ public class Main {
             keyPairGenerator.initialize(new RSAKeyGenParameterSpec(3072, RSAKeyGenParameterSpec.F4));
             final KeyPair keyPair =  keyPairGenerator.generateKeyPair();
 
+            Security.addProvider(new BouncyCastleProvider());
             final X509v3CertificateBuilder v3CertificateBuilder = new JcaX509v3CertificateBuilder(
                     new X500Name("CN=AgentSelfsignCA"),
                     BigInteger.valueOf(System.currentTimeMillis()),
